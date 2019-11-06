@@ -1,4 +1,13 @@
-# Byte-compiled / optimized / DLL files
+# Custom
+.DS_Store
+*.pem
+*.db
+
+hidden/
+*.java
+credential.*
+
+#Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
