@@ -1,0 +1,53 @@
+웹 표준성 
+- 웹접근성 지침 준수
+- 웹표준 기술의 활용
+( w3.org/TR/WCAG21
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
++ 국가공인 - 기업
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 최신버전으로 render링 해라
+    <title>Document</title> (유니크하게 만들어주세요 그러면, 노출)
+</head>
+<body>
+    
+
+</body>
+</html>
+
+
+
+3단 구성
+body
+    div.container
+        header
+
+        contents
+
+        footer
+
+div 그룹핑 
+
+WAI-ARIA 스펙?
+
+네비게이션 영역 2개 까지만 해라
+
+
+------------------------
+    <link 
+    rel="stylesheet" 
+    href="./css/layout/mobile.css" 
+    media="screen and (max-width: 999px)" />
+    <link rel="stylesheet" href="./css/layout/desktop.css" media="screen and (min-width: 1000px)"/>
+    모바일보다 나중에 desktop 해놓은다.
+    media 속성으로 조건에 따라 css 입히도록 설정할수 있다.

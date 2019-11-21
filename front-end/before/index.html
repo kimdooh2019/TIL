@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>web cafe</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/webcafe.css" />
+    <link 
+    rel="stylesheet" 
+    href="./css/layout/mobile.css" 
+    media="screen and (max-width: 999px)" />
+    <link rel="stylesheet" href="./css/layout/desktop.css" media="screen and (min-width: 1000px)"/>
+    <script src="./js/menu.js" defer ></script> 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><a href="./index.html"><img src="./images/rwd-logo.png" alt="Web Cafe"></a></h1>
+            
+              <ul class="member reset-list">
+                  <li>
+                      <a href="#">로그인</a>
+                      <span class="divider" aria-hidden="true">|</span>
+                  </li>
+                  <li>
+                      <a href="#">회원가입</a>
+                      <span class="divider" aria-hidden="true">|</span>
+                    </li>
+                  <li>
+                  <a href="#">커뮤니티</a>
+                  </li>
+              </ul>
+              <h2 class="a11y-hidden">검색</h2>
+              <form  class="search-form" action="https://formspree.io/seulbinim@gmail.com" method="POST">
+              <fieldset>
+                  <legend>검색</legend>
+                  <input type="search" aria-label="검색어" name="search" required placeholder="검색어를 입력하세요.">
+                  <button type="submit" class="button buttonSearch">검색</button>
+              </fieldset>
+              </form>
+           
+
+        </header>
+        <nav class="navigation menu">
+                <h2 class="a11y-hidden">메인 메뉴</h2>
+                <button class="buttonBurger" aria-label="메뉴 열기">
+                  <span class="burgerBar round positionTop"></span>
+                  <span class="burgerBar round positionMiddle"></span>
+                  <span class="burgerBar round positionBottom"></span>
+                </button>
+                <ul class="menu-list reset-list">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">HTML에 대해</a>
+                    <ul class="submenu">
+                      <li><a href="#">HTML5 소개</a></li>
+                      <li><a href="#">레퍼런스 소개</a></li>
+                      <li><a href="#">활용 예제</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">CSS에 대해</a>
+                    <ul class="submenu">
+                      <li><a href="#">CSS 소개</a></li>
+                      <li><a href="#">CSS2 VS CSS3</a></li>
+                      <li><a href="#">CSS 애니메이션</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">웹표준/웹접근성</a>
+                    <ul class="submenu">
+                      <li><a href="#">웹표준 이란?</a></li>
+                      <li><a href="#">웹접근성의 개요</a></li>
+                      <li><a href="#">HTML5의 현재와 미래</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">묻고 답하기</a>
+                    <ul class="submenu">
+                      <li><a href="#">묻고 답하기</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">1대1 질문</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">자료실</a>
+                    <ul class="submenu">
+                      <li><a href="#">공개 자료실</a></li>
+                      <li><a href="#">이미지 자료실</a></li>
+                      <li><a href="#">예제 자료실</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+        <main class="main">
+            <section class="book">
+                <h2 class="book-title ir irNews">
+                  추천 서적
+                  <span class="book-enTitle themeGreen">
+                    Recommend Book
+                  </span>
+                </h2>
+                <figure class="book-cover">
+                  <img class="responsive" src="images/book_rwd.jpg" alt="" aria-labelledby="book-coverCaption" />
+                  <figcaption id="book-coverCaption">
+                    반응형웹 핵심 가이드북 도서
+                  </figcaption>
+                </figure>
+                <dl class="book-info">
+                  <dt>저자</dt>
+                  <dd>김데레사</dd>
+                  <dt class="a11y-hidden">평점</dt>
+                  <dd class="themeGreen" aria-label="5점 만점에 4점">
+                    <span aria-hidden="true">★★★★☆</span>
+                  </dd>
+                </dl>
+                <p class="book-summary">
+                  반응형웹 디자인을 위한 핵심 내용을 다루고 있으며 미디어쿼리, 유연한
+                  레이아웃, 반응형 이미지 기법을 학습할 수 있다. 모바일 및 다양한
+                  해상도에 대응이 가능한 웹디자인을 이 책으로 시작해 보자!
+                </p>
+              </section>
+              <section class="news">
+                  <h2 class="news-title ir irNews">
+                    새소식 <span class="news-enTitle themeYellow">WebCafe News</span>
+                  </h2>
+                  <figure class="news-container">
+                    <!-- <video class="news-video responsive" poster="media/poster.jpg" controls>
+                      <source src="media/stories.mp4" type="video/mp4" />
+                      <track
+                        src="media/stories-en.vtt"
+                        kind="captions"
+                        srclang="en"
+                        label="English Caption"
+                      />
+                    </video> -->
+                    <div class="iframe-container">
+                        <iframe 
+                          src="https://www.youtube.com/embed/XsX3ATc3FbA" 
+                          allowfullscreen
+                        ></iframe>  
+                    </div>
+                    <figcaption class="a11y-hidden">구글 개발자 이야기</figcaption>
+                  </figure>
+                  <p class="news-summary">
+                    구글플레이는 다양한 분야에서 활약하고 있는 국내 개발사들을 모시고 직접
+                    이야기를 나눠보는 ‘구글플레이 개발자와의 대화’ 행사를 정기적으로
+                    개최할 예정입니다. 오늘 3월 29일(수) 구글 캠퍼스 서울에서 열린 첫 번째
+                    ‘구글플레이 개발자와의 대화’는 ‘해외에서 빵터진 한국 앱'을 주제로
+                    진행됐는데요, 국내 앱 시장은 물론 글로벌 시장에서도 주목 받으며 글로벌
+                    진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
+                  </p>
+                  <time class="news-date icon-calendar" datetime="2019-10-19T14:03:23">
+                    2019.10.19
+                  </time>
+                </section>
+            <section class="board">게시판</section>
+            <section class="favorite">인기게시판</section>
+            <section class="twitter">트위터</section>
+        </main>
+        <footer class="footer">푸터</footer>
+
+    </div>
+
+</style>
+</body>
+</html>

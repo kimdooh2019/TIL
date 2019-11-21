@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import url("./module/a11y.css");
+@import url("./module/module.css");
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("./fonts.css");
+/* 이게 의하는 것이.... before */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* a라는 tag */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-weight: 400;
+    color: #181818;
+}
+
+/* 컨테이너 */
+.container{
+    display: flex;
+}
+/* 헤더 
+   width 1000px + border 20px(left + rigth) + padding 20px (left + right) +  margin 
+   box-sizing ( border + padding )??????????
+*/
+
+
+/* 메인 */
+
+.main{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+/* book */
+
+/* .book{
+    background-color: lime;
+} */
+.book-cover{
+    text-align: center;
+}
+.book-cover figcaption{
+    font-size: 1.5rem;
+    display: block;
+    margin: 0.5em 0;
+}
+.book-info{
+    text-align: center;
+}
+.book-info dd{
+    margin-left:0;
+}
+.book-info *{
+    display: inline-block;
+
+}
+.book-info [aria-label]{
+    display: block;  
+    font-size: 2.5rem; 
+}
+/* .book-info dd:nth-of-type(2){
+    display: block;
+    font-size: 2.5rem;
+} */
+
+/* news */
+
+.news{
+    
+}
+
+.news-date {
+    text-align: right;
+    display: block;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* board */
+
+.board{
+    background-color: tan;
+}
+
+/* favorite */
+
+.favorite{
+    background-color: pink;
+}
+
+/* twitter */
+
+.twitter{
+    background-color: teal;
+}
+
+/* footer */
+
+.footer{
+    background-color: hotpink;
+    height: 20vh;
+
+}

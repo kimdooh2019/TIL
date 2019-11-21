@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>트렌지션</title>
+    <style>
+        .box{
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: 10px solid #000;
+            background: yellow;
+            /* transition-property: background, border-radius, transform;
+            transition-duration: 2000ms;
+            transition-delay: 0ms, 2000ms, 4000ms;
+            transition-timing-function: ease-in-out; */
+            transition: background 2000ms 0ms ease-in-out,
+                        border-radius 2000ms 2000ms ease-in-out,
+                        transform 2000ms 4000ms ease-in-out;
+
+        }
+        .box:hover{
+            border-radius: 50%;
+            background: pink;
+            transform: rotate(2turn);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        박스
+    </div>
+</body>
+</html>

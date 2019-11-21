@@ -1,0 +1,50 @@
+/* Common Class */
+/* .reset-list{
+
+} */
+.reset-list{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 스프라이트 이미지 [ 메인 콘텐츠 섹션 제목*/
+.ir{
+    background: url("../images/sprite_main.png") no-repeat;
+    height: 60px;
+    padding-left: 65px;
+}
+.irBook{
+    background-position: 0 0;
+}
+
+.irNews{
+    background-position: url("../images/sprite_main.png") 0 -230px;
+}
+
+/* 메인 콘텐츠 섹션 제목 공통*/
+.main[class*="-title"]{
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+.main [class*="-enTitle"]{
+    display: block;
+}
+
+.main [class*="-summary"]{
+    line-height: 1.5;
+}
+
+/* 글자 색상별 테마 */
+.themeGreen{
+    color: #abd375;
+}
+
+.themeYellow{
+    color: #e8ca58;
+}

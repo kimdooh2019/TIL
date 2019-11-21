@@ -1,0 +1,231 @@
+/* Mobile Layout */
+
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header, .navigation, .main, .footer{
+    width:100%;
+}
+
+.book, .news, .twitter, .board, .favorite{
+    width: 100%;
+}
+
+/* .book, .news, .board, .favorite, .twitter{ */
+    /* width: 100%; */
+    /* flex-basis: auto; */
+    /* flex-basis: 0; */
+    /* gorw 1배율 키움 */
+    /* flex-grow:1; */
+/* } */
+/* book section 만 2배율로 축소
+   나머지는 1배율 축소 */
+/* .book{ */
+    /* flex-shrink: 2; */
+    /* flex-grow: 3 */
+/* } */
+
+
+
+.header {
+    background-color: #38302e;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 1em;
+}
+
+.logo, .member, .search-form{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+.member{
+    order: -1;
+    background-color: #988574;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* .header {
+    background-color: #38302e;
+    color: white;
+    display: grid;
+    padding-bottom: 1em;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+} */
+
+
+
+/* */
+.member a{
+    display: inline-block;
+    /* background-color: blue; */
+    padding: 1em;
+}
+.search-form fieldset{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* [type="search"]{ */
+    /* border: 1px solid #aaa; */
+    /* padding-left: 5px; */
+    /* border-radius: 5px; */
+    /* height: 30px; */
+    /* width: calc(100% - 30px); */
+    /* background-color: pink; */
+    /* position: relative; */
+/* } */
+
+.buttonSearch{
+    width:30px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+    /* background-image: url("./../images/btn_search.png"); */
+    background-size: 100% 100%;
+}
+
+/* .buttonSearch::after{
+    content: '마지막 요소';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: pink;
+    background-image: url('./../images/btn_search.png');
+    background-size: 100% 100%;
+} */
+
+/* 네비게이션 */
+.buttonBurger{
+    width: 2.5em;
+    height: 2.5em ;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 7rem;
+    right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.burgerBar{
+    background: #fff;
+    /* width: 100%; */
+    height: 25%;
+    /* display: block; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+.burgerBar.positionTop{
+    top:0; 
+}
+.burgerBar.positionMiddle{
+    top:50%; 
+    transform: translateY(-50%);
+}
+.burgerBar.positionBottom{
+    top:100%; 
+    transform: translateY(-100%);
+    /* bottom: 0; */
+}
+.burgerBar.round{
+    border-radius: 50px;
+}
+
+.isAct .burgerBar.positionTop{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.isAct .burgerBar.positionMiddle{
+    transform: translate(-100%, -50%);
+    
+}
+.isAct .burgerBar.positionBottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.menu-list{
+    background: rgba(0,0,0,0.85);
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70vW;
+    height: 100vh;
+    padding: 2em 1em 2em 2em;
+    list-style: none;
+    /*navigation 감춰놓는 것*/
+    transform: translateX(-100%);
+    transition: all 0.2s;
+}
+.isAct .menu-list{
+    transform: none;
+}
+.menu-item{
+    margin-top: 1em;
+}
+.menu-link{
+    display: inline-block;
+    /*클릭할 수 있는 면적 커짐*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 1.5em;
+    width: calc(100% - 3.5em);
+}
+.submenu{
+    margin: 1em 0;
+    display: none;
+}
+.menuAct .submenu{
+    display: block;
+}
+
+.submenu li{
+    /* background: lightskyblue; */
+    margin-top: 0.5em;
+}
+.submenu a{
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* 메인 영역의 안쪽 여백 설정 */
+.main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
